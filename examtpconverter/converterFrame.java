@@ -66,7 +66,10 @@ public class converterFrame extends JFrame {
                 // qu'un nombre (un texte)
                 try 
                 {
+                    // Conversion en double du texte du champ de celsius
                     double celsius =  Double.parseDouble(celsiusField.getText());
+                    
+                    // On affiche la conversion calculée dans la zone de texte pour les Fahrenheit
                 textField.setText( String.valueOf(GetFahrenheit(celsius)) + " Fahrenheit");
                 }
                 catch(NumberFormatException ex)
